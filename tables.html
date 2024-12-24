@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice</title>
+    <style>
+        table {
+            width: 100%;
+            border-style: outset;
+            border-collapse: collapse;
+            background-image: linear-gradient(rgb(126, 14, 196),rgb(208, 80, 101));
+        }
+        caption {
+            margin-bottom: 1cm;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        th, td {
+            border: 1px solid aliceblue;
+            padding: 8px;
+            text-align: left;
+        }
+        th:nth-child(1) {
+            width: 150px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width:100%;
+            height:700px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bimage">
+    <video controls>
+        <source src="https://videos.pexels.com/video-files/7857385/7857385-uhd_1440_2560_24fps.mp4">
+    </video>
+    <div class="table">
+    <h1>Table Practice</h1>
+    <table>
+        <caption>Creative Thoughts Towards Tables</caption>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ramya Avula</td>
+                <td>Software Engineer Intern</td>
+                <td>2 Months</td>
+            </tr>
+            <tr>
+                <td>Rajeev</td>
+                <td>Human Resource</td>
+                <td>10 Years</td>
+            </tr> 
+            <tr>
+                <td>Vijaya Lakshmi</td>
+                <td>Software Engineer Intern</td>
+                <td>2 Months</td>
+            </tr>
+            <tr>
+                <td>Nitheesh</td>
+                <td>DevOps Engineer</td>
+                <td>1 Year</td>
+            </tr>
+            <tr>
+                <td>Anitha</td>
+                <td>Software Engineer Intern</td>
+                <td>2 Months</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Number of Employees: 5</td>
+            </tr>
+        </tfoot>
+        </table>
+    </div>
+    </div>
+</body>
+

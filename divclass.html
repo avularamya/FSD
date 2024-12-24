@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Responsive Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice_width ,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+           body
+           {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+           }
+           .form
+           {
+            display: flex;
+            flex-direction: column;
+            background-color:white;
+            border-top: 2px solid blue ;
+            border-radius: 10px;
+           }
+           .heading
+           {
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            margin-bottom: 25px;
+           }
+           .names,.email,.pass,.cpass
+           {
+            display: flex;
+            flex-direction: row;
+           }
+           .names i,.email i,.pass i,.cpass i{
+             margin-top: 5px;
+             margin-left: 10px;
+           }
+           .names input,.email input,.pass input,.cpass input{
+             margin-right: 25px;
+             margin-bottom: 25px;
+             margin-left: 10px;
+             padding: 5px;
+           }
+           .gen input,.sub input
+           {
+            margin-left: 30px;
+            margin-bottom: 25px;
+           }
+           .sub input{
+            display: flex;
+            font-size: 15px;
+            border-radius:50px;
+            padding: 5px;
+           }
+           .sub input:hover
+           {
+            background-color: blue ;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <div class="heading">Registration Form</div>
+            <div class="names">
+                <i class="fa fa-user lock"></i>
+                <input type="text" placeholder="First Name" id="Fname">
+                <input type="text" placeholder="Last Name" id="Lname">
+            </div>
+            <div class="email">
+            <i class="fa fa-envelope email"></i>
+            <input type="email" placeholder="Email" id="email">
+           </div>
+           <div class="pass">
+            <i class="fa fa-lock lock"></i>
+            <input type="password" placeholder="password" id="password">
+           </div>
+           <div class="cpass">
+            <i class="fa fa-lock lock"></i>
+            <input type="password" placeholder="Confirm Password" id="confirm-password">
+           </div>
+            <div class="gen">
+            <input type="radio" id="male" name="gender" vaue="Male">Male
+            <input type="radio" id="Female" name="gender" value="Female">Female
+           </div>
+           <div class="sub">
+                  <input type="button" value="submit">
+           </div>
+        </div>
+    </body>
+</html>
